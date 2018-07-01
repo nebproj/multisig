@@ -86,4 +86,4 @@ class Multisig2of2Simple {
   }
 }
 
-module.exports = HelloWorld;
+module.exports = Multisig2of2Simple;
