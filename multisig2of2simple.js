@@ -64,6 +64,7 @@ class Multisig2of2Simple {
               // release the money
               Blockchain.transfer(addr, payoutAmount);
               LocalContractStorage.set(LAST_COMMAND, null);
+              LocalContractStorage.set(TOTAL_DEPOSIT, new BigNumber(0));
               
             } else {
               // same signer, so do no action.
