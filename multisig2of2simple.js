@@ -61,6 +61,8 @@ class Multisig2of2Simple {
         if (lastCommand && lastCommand.recipient && lastCommand.firstSigner) {
           if (lastCommand.recipient === addr) {
             if (lastCommand.firstSigner !== from) {
+              let payoutAmount = LocalContractStorage.get(TOTAL_DEPOSIT);
+              payoutAmount = new BigNumber(payoutAmount);
               // release the money
               Blockchain.transfer(addr, payoutAmount);
               LocalContractStorage.set(LAST_COMMAND, null);
