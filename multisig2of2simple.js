@@ -85,6 +85,14 @@ class Multisig2of2Simple {
   who() {
     return {addr1: this.addr1, addr2: this.addr2};
   }
+
+  total() {
+    return LocalContractStorage.get(TOTAL_DEPOSIT);
+  }
+
+  lastCommand() {
+    return LocalContractStorage.get(LAST_COMMAND);
+  }
 }
 
 module.exports = Multisig2of2Simple;
