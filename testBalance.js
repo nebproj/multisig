@@ -13,8 +13,8 @@ class Test {
   }
 
   balance() {
-    `let contractAddr = Blockchain.transaction.to;
-    return Blockchain.getAccountState(contractAddr).balance;`
+    let contractAddr = Blockchain.transaction.to;
+    return Blockchain.getAccountState(contractAddr).balance;
   }
 
   contractState() {
