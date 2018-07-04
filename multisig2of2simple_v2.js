@@ -5,7 +5,9 @@ const TOTAL_DEPOSIT = "total_deposit";
  * 2 of 2 multisig contract.
  * simplistic version.  
  * user can deposit into this contract.  
- * require both user to release the entire fund.  s
+ * require both user to release the entire fund.  
+ * 
+ * @version 2 - this version has simpler logic than v1.
  */
 class Multisig2of2Simple {
   
