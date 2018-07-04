@@ -19,6 +19,7 @@ class Test {
   pushArray(item) {
     // we can't simply do this.array.push(item)
     // it seems that we have to eval it
+    // perhaps the vm does not know the serialized obj's type
     let ar = eval(this.array);
     ar.push(item);
     this.array = ar;
